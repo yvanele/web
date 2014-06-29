@@ -1,0 +1,53 @@
+ul#menu
+{
+height: 30px ;
+width: 770px;
+float: left ;
+margin: 0 ;
+padding: 0 ;
+background: url(http://img339.imageshack.us/img339/3439/bgmenuu.jpg) ;
+list-style-type: none ;
+font-size: 1.2em ;
+font-weight: bold ;
+color: #fff ;}	
+	
+ul#menu li 
+{
+float:left;
+margin:auto;
+padding:0;
+background: url(http://img339.imageshack.us/img339/3439/bgmenuu.jpg);
+text-align: center ;
+list-style-type: none ;}
+
+ul#menu li ul 
+{display:none;
+margin:0;
+padding:0;
+width: 126px;
+position:absolute;}
+		
+ul#menu li a
+{width: 126px ;
+line-height: 25px ;
+font-size: 1.2em ;
+font-weight: bold ;
+letter-spacing: 2px ;
+color: #fff ;
+text-decoration: none ;
+border-right: 1px solid #dea ;
+border-left: 1px solid #dea ;
+float: left;}
+		
+ul#menu li a:hover
+{display: block;
+background: url(bg_menu2.jpg) ;
+border-right: 1px solid white ;
+border-left: 1px solid white ;
+font-size: 1.4em;
+letter-spacing: 1px;}
+		
+ul#menu  li:hover ul 
+{display:block;
+font-size: 1em ;
+font-weight: smaller ;}
