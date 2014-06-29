@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC 
+         "-//W3C//DTD XHTML BASIC 1.1//EN"
+         "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<head>
+		<script type="text/javascript">
+			infos = new Array('Description: '+navigator.userAgent,
+							  'Nom: '+navigator.appName,
+							  'Moteur de rendu graphique: '+navigator.appCodeName,
+							  'Version: '+navigator.appVersion,
+							  'Date de modification: '+document.lastModified,
+							  'URL du document: '+document.location,
+							  'URL d\'origine: '+document.referrer);
+								  
+				for(var i in infos)
+					var chaine = chaine+infos[i]+'\n';
+				alert(chaine);
+				
+				var caract ='';
+				for(var j in infos)
+					caract = caract+'<li>'+infos[j]+'</li>';
+				document.writeln('<ul>'+caract+'</ul>');
+		</script>
+		<title>Qui suis-je en double?</title>
+	</head>
+	<body onload='script'>
+			
+	</body>
+</html>
