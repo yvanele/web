@@ -1,0 +1,25 @@
+Partie "Cassettes détenues par un abonné" : Affecter des cassettes à un abonné
+---- Modifier la table ABONNES (colonne NbCassettes) ----
+update ABONNES set NbCassettes = 1 where Code = '1Xu123';
+select * from abonnes where code = '1Xu123';
+
+---- Modifier la table CASSETTES (colonne Statut) ----
+update CASS set statut = 'empruntee' where nofilm = 1 and noexemplaire = 1;
+select * from cassettes where nofilm = 1;
+
+---- Modifier la table EMPRES ----
+update empres set nofilm = 1, noexemplaire = 1, codeabonne = '1Xu123', dateempres = now();
+insert into empres values(1, 1, '1Xu123', now());
+select * from empres;
+
+
+
+RETOUR DE CASSETTES
+update abonnes set nbcassettes = 1 where code = '365AL8';
+select * from abonnes where code = '365AL8';
+
+update cassettes set statut = 'empruntee' where nofilm = 10 and noexemplaire = 1;
+select * from cassettes where nofilm = 10;
+
+insert into empres values(10, 1, '365AL8', now());
+select * from empres;
