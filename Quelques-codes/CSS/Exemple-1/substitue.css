@@ -1,0 +1,24 @@
+/*
+a.menu img:hover{
+	visibility: hidden;
+}
+
+a.menu img:hover{
+	background: url(menu2.jpg);
+	visibility: collapse;
+}
+*/
+
+a.menu {
+	display: block;
+	float:left;
+	background : url('menu2.jpg');
+}
+
+a.menu:hover {
+	visibility: visible;
+}
+
+a.menu:hover img {
+	visibility: hidden;
+}
